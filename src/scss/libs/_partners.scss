@@ -1,0 +1,18 @@
+.partners {
+    text-align: center;
+    padding: 100px 0px 125px 0px;
+    @media (max-width: $breakpoint480) {
+        padding: 20px 0px 50px 0px;
+    }
+    // .partners__item
+    &__item {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 40px;
+        margin-top: 80px;
+        @media (max-width: $breakpoint480) {
+            margin-top: 40px;
+        }
+    }
+}

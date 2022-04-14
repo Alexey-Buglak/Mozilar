@@ -1,0 +1,96 @@
+.container {
+    max-width: ($containerWidth + $containerPadding) + px;
+    margin: 0 auto;
+    padding: 0 $containerSidePadding;
+
+    @media (max-width: $breakpoint1200) {
+        max-width: 1100px;
+    }
+
+    @media (max-width: $breakpoint992) {
+        max-width: 970px;
+    }
+
+    @media (max-width: $breakpoint768) {
+        max-width: 750px;
+    }
+
+    @media (max-width: $breakpoint480) {
+        max-width: none;
+    }
+}
+
+body {
+    font-family: 'Europa';
+
+    &.locked {
+        overflow: hidden;
+    }
+}
+
+//SECTION ELEMENTS
+.section {
+    &__links {
+        display: flex;
+        gap: 16px;
+        @media (max-width: $breakpoint480) {
+            justify-content: center;
+        }
+    }
+
+    &__button-red {
+        background-color: $primaryRed;
+        padding: 14px 32px;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.0025em;
+        color: #ffffff;
+        border-radius: 6px;
+        &:hover {
+            transition: 0.2s linear;
+            background-color: $secondaryRed;
+        }
+        @media (max-width: $breakpoint480) {
+            padding: 7px 16px;
+        }
+    }
+    
+    &__button-neutral {
+        padding: 14px 32px;
+        color: $primaryRed;
+        font-size: 16px;
+        line-height: 150%;
+        border: 1px solid #bf0830;
+        box-sizing: border-box;
+        border-radius: 6px;
+        &:hover {
+            transition: 0.1s linear;
+            transform: scale(1.1);
+        }
+        @media (max-width: $breakpoint480) {
+            padding: 7px 16px;
+        }
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 62px;
+        color: $primaryBlue;
+        span {
+            color: $primaryRed;
+        }
+        @media (max-width: $breakpoint480) {
+            font-size: 30px;
+            line-height: 40px;
+        }
+    }
+    &__text {
+        font-size: 16px;
+        line-height: 27px;
+        color: $secondaryTextColor;
+        @media (max-width: $breakpoint480) {
+            // font-size: 16px;
+            // line-height: 20px;
+        }
+    }
+}

@@ -1,0 +1,41 @@
+.section__awards {
+    background: linear-gradient(268.52deg, #E3E7F6 -52.27%, rgba(227, 231, 246, 0) 138.23%);
+    position: relative;
+    z-index: -2;
+}
+.awards {
+    padding: 256px 0px 264px 0px;
+    max-width: 416px;
+    h3 {
+        margin-top: 16px;
+    }
+    @media (max-width: $breakpoint992) {
+        padding: 150px 0px 420px 0px;
+    }
+    @media (max-width: $breakpoint768) {
+        padding: 60px 0px 500px 0px;
+    }
+    @media (max-width: $breakpoint480) {
+        padding: 50px 0px 400px 0px;
+    }
+    @media (max-width: 320px) {
+        padding: 50px 0px 300px 0px;
+    }
+    
+    // .awards__img
+    &__img {
+        position: absolute;
+        right: 132px;
+        bottom: 50%;
+        transform: translateY(50%);
+        @media (max-width: $breakpoint1200) {
+            right: 0;
+        }
+        @media (max-width: $breakpoint992) {
+            transform: translateY(0%);
+            bottom: 0;
+            max-width: 100%;
+            z-index: -1;
+        }
+    }
+}
