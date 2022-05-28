@@ -46,8 +46,8 @@ body {
         letter-spacing: 0.0025em;
         color: #ffffff;
         border-radius: 6px;
+        transition: 0.2s linear;
         &:hover {
-            transition: 0.2s linear;
             background-color: $secondaryRed;
         }
         @media (max-width: $breakpoint480) {
@@ -61,10 +61,9 @@ body {
         font-size: 16px;
         line-height: 150%;
         border: 1px solid #bf0830;
-        box-sizing: border-box;
         border-radius: 6px;
+        transition: 0.1s linear;
         &:hover {
-            transition: 0.1s linear;
             transform: scale(1.1);
         }
         @media (max-width: $breakpoint480) {
@@ -89,8 +88,7 @@ body {
         line-height: 27px;
         color: $secondaryTextColor;
         @media (max-width: $breakpoint480) {
-            // font-size: 16px;
-            // line-height: 20px;
+            line-height: 20px;
         }
     }
 }

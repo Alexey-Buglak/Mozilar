@@ -1,8 +1,12 @@
 .section__awards {
     background: linear-gradient(268.52deg, #E3E7F6 -52.27%, rgba(227, 231, 246, 0) 138.23%);
-    position: relative;
     z-index: -2;
 }
+
+.awards__container {
+    position: relative;
+}
+
 .awards {
     padding: 256px 0px 264px 0px;
     max-width: 416px;
@@ -25,12 +29,9 @@
     // .awards__img
     &__img {
         position: absolute;
-        right: 132px;
+        right: 0;
         bottom: 50%;
         transform: translateY(50%);
-        @media (max-width: $breakpoint1200) {
-            right: 0;
-        }
         @media (max-width: $breakpoint992) {
             transform: translateY(0%);
             bottom: 0;

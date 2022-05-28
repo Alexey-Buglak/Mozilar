@@ -4,10 +4,20 @@
 @import './fonts';
 @import './global';
 
+// GLOBAL
 @import './libs/header';
 @import './libs/footer';
 @import './libs/hero';
 @import './libs/partners';
+
+//HOME PAGE
 @import './libs/products';
 @import './libs/award';
 @import './libs/innovation';
+@import './libs/build';
+
+//PRODUCTS PAGE
+@import './libs/productsInfo';
+@import './libs/productsBuild';
+
+//ABOUT PAGE

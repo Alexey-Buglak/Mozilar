@@ -1,0 +1,27 @@
+.section {
+
+    // .section__productsBuild
+    &__productsBuild {
+        background: linear-gradient(342.12deg, #E3E7F6 -6.53%, rgba(227, 231, 246, 0) 87.81%);
+    }
+
+}
+
+.productsBuild {
+    text-align: center;
+    margin: 0 auto;
+    padding: 135px 0px 140px;
+    max-width: 670px;
+
+    @media (max-width: $breakpoint480) {
+        padding: 50px 0px 70px;
+    }
+
+    h3 {
+        margin-top: 20px;
+    }
+    div {
+        justify-content: center;
+        margin-top: 40px;
+    }
+}

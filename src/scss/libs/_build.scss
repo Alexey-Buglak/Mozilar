@@ -1,0 +1,36 @@
+.build {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    max-width: 360px;
+    padding: 210px 0px 240px;
+    @media (max-width: $breakpoint768) {
+        padding: 50px 0px 500px;
+    }
+    @media (max-width: $breakpoint480) {
+        padding: 10px 0px 70px;
+        max-width: none;
+        text-align: center;
+    }
+    // .build__container
+    &__container {
+        position: relative;
+    }
+
+
+    // .build__img
+    &__img {
+        position: absolute;
+        right: 0;
+        bottom: 50%;
+        transform: translateY(50%);
+        @media (max-width: $breakpoint768) {
+            bottom: 0;
+            transform: translateY(0%);
+        }
+        @media (max-width: $breakpoint480) {
+            opacity: 0.1;
+            width: 100%;
+        }
+    }
+}
