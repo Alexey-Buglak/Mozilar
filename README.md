@@ -1,2 +1,1 @@
-## Mozilar
-[Project](alexey-buglak.github.io/mozilar/build)
+##[Mozilar](/build/index.html)
