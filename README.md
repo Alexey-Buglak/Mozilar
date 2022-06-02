@@ -1,1 +1,1 @@
-[##Mozilar](https://alexey-buglak.github.io/mozilar/build)
+[Mozilar](https://alexey-buglak.github.io/Mozilar/build/)
